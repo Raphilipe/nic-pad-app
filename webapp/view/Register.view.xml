@@ -1,0 +1,24 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:sf="sap.f" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" controllerName="sap.ui.demo.todo.controller.Register" displayBlock="false">
+	<Page title="{i18n>registerTitle}" showNavButton="true" navButtonPress=".onNavBack">
+		<content>
+			<VBox fitContainer="true" justifyContent="Center" alignItems="Center" alignContent="Center">
+				<f:SimpleForm id="SimpleFormChange354" editable="true" layout="ResponsiveGridLayout" labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+					<f:content>
+						<VBox fitContainer="true" justifyContent="Center" alignItems="Center" alignContent="Center">
+							<items>
+								<ObjectStatus id="osRegister" text="{i18n>objectStatusRegister}" icon="sap-icon://locked" />
+								<Input id="inputUser" value="{registerView>/User}" type="Email" submit="onRegister" placeholder="{i18n>placeHolderUser}" width="16rem" required="true" />
+								<Input id="inputUserCheck" value="{registerView>/UserCheck}" type="Email" submit="onRegister" placeholder="{i18n>placeHolderUserCheck}" width="16rem" required="true" />
+								<Input id="inputUserFirstName" value="{registerView>/FirstName}" maxLength="25" submit="onRegister" placeholder="{i18n>placeHolderFirstName}" width="16rem" required="true" />
+								<Input id="inputUserLastName" value="{registerView>/LastName}" maxLength="45" submit="onRegister" placeholder="{i18n>placeHolderLastName}" width="16rem" required="true" />
+								<Input id="inputPassword" value="{registerView>/Password}" submit="onRegister" type="Password" placeholder="{i18n>placeHolderPassword}" width="16rem" required="true" />
+								<Input id="inputPasswordCheck" value="{registerView>/PasswordCheck}" submit="onRegister" type="Password" placeholder="{i18n>placeHolderPasswordCheck}" width="16rem" required="true" />
+								<Button id="buttonRegister" text="{i18n>buttonRegister}" press="onRegister" type="Emphasized" width="16rem"></Button>
+							</items>
+						</VBox>
+					</f:content>
+				</f:SimpleForm>
+			</VBox>
+		</content>
+	</Page>
+</mvc:View>

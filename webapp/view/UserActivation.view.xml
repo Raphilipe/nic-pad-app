@@ -1,0 +1,7 @@
+<mvc:View controllerName="sap.ui.demo.todo.controller.UserActivation" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="false">
+	<MessagePage title="{i18n>userActivationTitle}" text="{userActivationView>/message}" icon="{userActivationView>/icon}" id="page" description="">
+		<customDescription>
+			<Link id="link" text="{i18n>linkGoToLogin}" press=".onLinkPressed" />
+		</customDescription>
+	</MessagePage>
+</mvc:View>

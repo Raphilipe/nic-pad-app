@@ -1,0 +1,22 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:sf="sap.f" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" controllerName="sap.ui.demo.todo.controller.Login" displayBlock="false">
+	<Page>
+		<content>
+			<VBox fitContainer="true" justifyContent="Center" alignItems="Center" alignContent="Center">
+				<f:SimpleForm id="SimpleFormChange354" editable="true" layout="ResponsiveGridLayout" labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+					<f:content>
+						<VBox fitContainer="true" justifyContent="Center" alignItems="Center" alignContent="Center">
+							<items>
+								<ObjectStatus id="osCredentials" text="{i18n>objectStatusLogin}" icon="sap-icon://locked" />
+								<Input id="inputUser" value="{loginView>/User}" type="Email" submit="onLogin" placeholder="{i18n>placeHolderUser}" width="16rem" required="true" />
+								<Input id="inputPassword" value="{loginView>/Password}" submit="onLogin" type="Password" placeholder="{i18n>placeHolderPassword}" width="16rem" required="true" />
+								<Button id="buttonLogin" text="{i18n>buttonLogin}" press="onLogin" type="Emphasized" width="16rem"></Button>
+								<Button id="buttonRegister" text="{i18n>buttonRegister}" press="onRegister" width="16rem" type="Transparent"></Button>
+								<Button id="buttonForgotPass" text="{i18n>buttonForgotPassword}" press="onForgotPassword" width="16rem" type="Transparent"></Button>
+							</items>
+						</VBox>
+					</f:content>
+				</f:SimpleForm>
+			</VBox>
+		</content>
+	</Page>
+</mvc:View>

@@ -1,0 +1,19 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:sf="sap.f" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" controllerName="sap.ui.demo.todo.controller.UserForgotPass" displayBlock="false">
+	<Page title="{i18n>userForgotPassTitle}" showNavButton="true" navButtonPress=".onNavBack">
+		<content>
+			<VBox fitContainer="true" justifyContent="Center" alignItems="Center" alignContent="Center">
+				<f:SimpleForm id="SimpleFormChange354" editable="true" layout="ResponsiveGridLayout" labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+					<f:content>
+						<VBox fitContainer="true" justifyContent="Center" alignItems="Center" alignContent="Center">
+							<items>
+								<ObjectStatus id="osUserForgotPass" text="{i18n>objectStatusForgotPass}" icon="sap-icon://arobase" />
+								<Input id="inputUser" value="{forgotPassModel>/user}" type="Email" submit="onSendMail" placeholder="{i18n>placeHolderUser}" width="16rem" required="true" />
+								<Button id="buttonSendMail" text="{i18n>buttonSendMail}" press="onSendMail" type="Emphasized" width="16rem"></Button>
+							</items>
+						</VBox>
+					</f:content>
+				</f:SimpleForm>
+			</VBox>
+		</content>
+	</Page>
+</mvc:View>

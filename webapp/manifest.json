@@ -1,0 +1,168 @@
+{
+	"_version": "1.12.0",
+	"sap.app": {
+		"id": "sap.ui.demo.todo",
+		"type": "application"
+	},
+	"sap.ui5": {
+		"dependencies": {
+			"minUI5Version": "1.75.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.f": {}
+			}
+		},
+		"rootView": {
+			"viewName": "sap.ui.demo.todo.view.App",
+			"type": "XML",
+			"async": true,
+			"id": "app"
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "sap.ui.demo.todo.i18n.i18n",
+					"supportedLocales": [
+						"en",
+						"pt"
+					],
+					"fallbackLocale": "en"
+				}
+			}
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"type": "View",
+				"viewType": "XML",
+				"path": "sap.ui.demo.todo.view",
+				"controlId": "app",
+				"controlAggregation": "pages",
+				"transition": "slide",
+				"bypassed": {
+					"target": [
+						"notFound"
+					]
+				},
+				"async": true
+			},
+			"routes": [
+				{
+					"pattern": "",
+					"name": "login",
+					"target": "login"
+				},
+				{
+					"pattern": "register",
+					"name": "register",
+					"target": "register"
+				},
+				{
+					"pattern": "home",
+					"name": "home",
+					"target": "home"
+				},
+				{
+					"pattern": "user",
+					"name": "user",
+					"target": "user"
+				},
+				{
+					"pattern": "userForgotPass",
+					"name": "userForgotPass",
+					"target": "userForgotPass"
+				},
+				{
+					"pattern": "userChangePass/{objectId}",
+					"name": "userChangePass",
+					"target": "userChangePass"
+				},
+				{
+					"pattern": "userResetPass/{objectId}",
+					"name": "userResetPass",
+					"target": "userResetPass"
+				},
+				{
+					"pattern": "userActivation/{objectId}",
+					"name": "userActivation",
+					"target": "userActivation"
+				},
+				{
+					"pattern": "personList",
+					"name": "personList",
+					"target": "personList"
+				},
+				{
+					"pattern": "personEdit/{objectId}",
+					"name": "personEdit",
+					"target": [
+						"personEdit"
+					]
+				}
+			],
+			"targets": {
+				"login": {
+					"id": "login",
+					"name": "Login",
+					"level": 0
+				},
+				"register": {
+					"id": "register",
+					"name": "Register",
+					"level": 1
+				},
+				"home": {
+					"id": "home",
+					"name": "Home",
+					"level": 1
+				},
+				"user": {
+					"id": "user",
+					"name": "User",
+					"level": 2
+				},
+				"userActivation": {
+					"viewName": "UserActivation",
+					"viewId": "userActivation"
+				},
+				"userForgotPass": {
+					"id": "userForgotPass",
+					"name": "UserForgotPass",
+					"level": 2
+				},
+				"userChangePass": {
+					"id": "userChangePass",
+					"name": "UserChangePass",
+					"level": 3
+				},
+				"userResetPass": {
+					"id": "userResetPass",
+					"name": "UserResetPass"
+				},
+				"personList": {
+					"id": "personList",
+					"name": "PersonList",
+					"level": 2
+				},
+				"personEdit": {
+					"id": "personEdit",
+					"name": "PersonEdit",
+					"level": 3
+				},
+				"notFound": {
+					"viewName": "NotFound",
+					"viewId": "notFound"
+				}
+			}
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/styles.css"
+				}
+			]
+		}
+	}
+}

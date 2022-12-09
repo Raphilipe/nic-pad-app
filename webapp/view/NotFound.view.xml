@@ -1,0 +1,7 @@
+<mvc:View controllerName="sap.ui.demo.todo.controller.NotFound" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="false">
+    <MessagePage title="{i18n>notFoundTitle}" text="{i18n>notFoundText}" icon="sap-icon://document" id="page" description="">
+        <customDescription>
+            <Link id="link" text="{i18n>linkBackHome}" press=".onLinkPressed" />
+        </customDescription>
+    </MessagePage>
+</mvc:View>

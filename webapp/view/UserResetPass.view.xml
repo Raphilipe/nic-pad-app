@@ -1,0 +1,20 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:sf="sap.f" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" controllerName="sap.ui.demo.todo.controller.UserResetPass" displayBlock="false">
+    <Page title="{i18n>userResetPassTitle}">
+        <content>
+            <VBox fitContainer="true" justifyContent="Center" alignItems="Center" alignContent="Center">
+                <f:SimpleForm id="SimpleFormChange354" editable="true" layout="ResponsiveGridLayout" labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+                    <f:content>
+                        <VBox fitContainer="true" justifyContent="Center" alignItems="Center" alignContent="Center">
+                            <items>
+                                <ObjectStatus id="osUserResetPass" text="{i18n>objectStatusResetPass}" icon="sap-icon://locked" />
+                                <Input id="inputNewPassword" value="{userResetPassModel>/newPassword}" submit="onSave" type="Password" placeholder="{i18n>placeHolderNewPassword}" width="16rem" required="true" />
+                                <Input id="inputNewPasswordCheck" value="{userResetPassModel>/newPasswordCheck}" submit="onSave" type="Password" placeholder="{i18n>placeHolderNewPasswordCheck}" width="16rem" required="true" />
+                                <Button id="buttonSave" text="{i18n>buttonSave}" press="onSave" type="Emphasized" width="16rem"></Button>
+                            </items>
+                        </VBox>
+                    </f:content>
+                </f:SimpleForm>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

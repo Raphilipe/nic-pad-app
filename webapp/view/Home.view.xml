@@ -1,0 +1,31 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:f="sap.f" controllerName="sap.ui.demo.todo.controller.Home" displayBlock="false">
+    <Page title="{i18n>homeTitle}" showNavButton="false" navButtonPress=".onNavBack">
+        <content>
+            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>teamCalendarTile}" press="onTeamsCalendar" frameType="Auto">
+                <TileContent>
+                    <ImageContent src="sap-icon://calendar" />
+                </TileContent>
+            </GenericTile>
+            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>shoppingCartTile}" press="onShoppingCart" frameType="Auto">
+                <TileContent>
+                    <ImageContent src="sap-icon://cart" />
+                </TileContent>
+            </GenericTile>
+            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>browseOrdersTitle}" press="onBrowseOrders" frameType="Auto">
+                <TileContent>
+                    <ImageContent src="sap-icon://internet-browser" />
+                </TileContent>
+            </GenericTile>
+            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>manageProductsTitle}" press="onManageProducts" frameType="Auto">
+                <TileContent>
+                    <ImageContent src="sap-icon://add-product" />
+                </TileContent>
+            </GenericTile>
+			<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>shopAdmTool}" press="onShopAdmTool" frameType="Auto">
+                <TileContent>
+                    <ImageContent src="sap-icon://key-user-settings" />
+                </TileContent>
+            </GenericTile>
+        </content>
+    </Page>
+</mvc:View>

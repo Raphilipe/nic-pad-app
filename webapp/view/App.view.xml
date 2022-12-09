@@ -1,0 +1,13 @@
+<mvc:View controllerName="sap.ui.demo.todo.controller.App" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:tnt="sap.tnt" displayBlock="true" height="94%">
+	<tnt:ToolHeader>
+		<Image id="appLogo" src="./img/nic-pad-logo.png" />
+		<Title id="appTitle" text="{i18n>appTitle}" />
+		<ToolbarSpacer id="tbarSpacer" />
+		<Button id="buttonVersion" visible="{appView>/enableMenu}" text="v0.1.0" type="Transparent" press=".onVersionPress" tooltip="{i18n>ttVersion}" />
+		<Button id="buttonHelp" visible="{appView>/enableMenu}" icon="sap-icon://sys-help" type="Transparent" press=".onHelpPress" tooltip="{i18n>ttHelp}" />
+		<Button id="buttonUser" visible="{appView>/enableMenu}" type="Transparent" icon="sap-icon://employee" press=".handlePressUserMenu" tooltip="{i18n>ttUserMenu}" />
+	</tnt:ToolHeader>
+	<Shell appWidthLimited="false">
+		<App id="app" />
+	</Shell>
+</mvc:View>
