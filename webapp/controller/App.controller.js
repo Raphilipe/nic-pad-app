@@ -50,7 +50,7 @@ sap.ui.define(
 					.getConfiguration()
 					.getTheme();
 				var userData = this.getUserData();
-				var userName = `${userData.firstName} ${userData.lastName}`;
+				var userName = userData.firstName + userData.lastName;
 				if (currentTheme === "sap_horizon") {
 					menuItemText =
 						this.getResourceBundle().getText("turnLightsOff");
