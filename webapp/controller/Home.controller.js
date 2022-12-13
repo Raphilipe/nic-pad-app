@@ -52,6 +52,10 @@ sap.ui.define(
 				window.open("https://shop-adm-tool-nicpad.azurewebsites.net");
 			},
 
+			onDashboard: function () {
+				window.open("https://dashboard-nicpad.azurewebsites.net/");
+			},
+
 			onNavBack: function () {
 				this.getRouter().navTo("login", {}, true);
 			},

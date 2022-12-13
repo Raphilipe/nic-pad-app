@@ -21,7 +21,12 @@
                     <ImageContent src="sap-icon://add-product" />
                 </TileContent>
             </GenericTile>
-			<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>shopAdmTool}" press="onShopAdmTool" frameType="Auto">
+            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>shopAdmTool}" press="onShopAdmTool" frameType="Auto">
+                <TileContent>
+                    <ImageContent src="sap-icon://key-user-settings" />
+                </TileContent>
+            </GenericTile>
+            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>dashboard}" press="onDashboard" frameType="Auto">
                 <TileContent>
                     <ImageContent src="sap-icon://key-user-settings" />
                 </TileContent>
